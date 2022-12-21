@@ -21,7 +21,15 @@
 </head>
 
 <body>
-	
+	<?php
+		}
+
+		$sql_tampil = "select * from tb_pegawai where nip='$nip'";
+		$query_tampil = mysqli_query($koneksi, $sql_tampil);
+		$no=1;
+		while ($data = mysqli_fetch_array($query_tampil,MYSQLI_BOTH)) {
+	?>
+	</center> -->
 
 	<img src="../dist/img/kopsurat.jpg" style="width:100%;">
 
